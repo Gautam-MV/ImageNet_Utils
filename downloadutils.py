@@ -18,7 +18,7 @@ if __name__ == '__main__':
     p.add_argument('--verbose', '-v', action='store_true', help='Enable verbose log')
     args = p.parse_args()
     if args.wnid is None:
-        print 'No wnid'
+        print('No wnid')
         sys.exit()
 
     downloader = imagedownloader.ImageNetDownloader()
